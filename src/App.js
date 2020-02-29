@@ -2,8 +2,17 @@ import React, {Component} from 'react';
 
 class App extends Component {
   render () {
-    return <div><h1>Hello, world</h1></div>
+    // const greeting = "qwe"
+    // const dom =  <h1 className="foo">{greeting} Hello, world!</h1>
+    // return dom
+    return (
+      <React.Fragment>
+        <label htmlFor= "bar">bar</label>
+        <input type="text" onChange={() => {console.log("aaa")}}/>
+      </React.Fragment>
+    )
   }
 }
+
 
 export default App;
